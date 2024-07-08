@@ -1,0 +1,863 @@
+[INFO]: <Pipeline object; current queue size: 0 op(s)> was succesfully initialized
+[INFO]: <FastqParser object> was succesfully initialized
+[INFO]: <DataAnalysisTools object> was succesfully initialized
+[INFO]: 14 ops appended to pipeline; current queue size: 14
+[INFO]: Queuing <fetch_dir_gz> op. . .
+[INFO]: Fetching j_ADH_an_r5_m.gz. . .
+[INFO]: The operation took 28.788 s
+[INFO]: j_ADH_an_r5_m dna dataset shape: (10574604,)
+[INFO]: j_ADH_an_r5_m Q dataset shape: (10574604,)
+[INFO]: j_ADH_an_r5_m pep dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <trim> op. . .
+[INFO]: The operation took 26.857 s
+[INFO]: j_ADH_an_r5_m dna dataset shape: (10574604,)
+[INFO]: j_ADH_an_r5_m Q dataset shape: (10574604,)
+[INFO]: j_ADH_an_r5_m pep dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <translate_dna> op. . .
+[INFO]: 14 ops appended to pipeline; current queue size: 25
+[INFO]: Queuing <length_summary> op. . .
+[INFO]: <Pipeline object; current queue size: 0 op(s)> was succesfully initialized
+[INFO]: <FastqParser object> was succesfully initialized
+[INFO]: <DataAnalysisTools object> was succesfully initialized
+[INFO]: 14 ops appended to pipeline; current queue size: 14
+[INFO]: Queuing <fetch_dir_gz> op. . .
+[INFO]: Fetching j_LLM_se_r5_m.gz. . .
+[INFO]: The operation took 34.695 s
+[INFO]: j_LLM_se_r5_m dna dataset shape: (12872482,)
+[INFO]: j_LLM_se_r5_m Q dataset shape: (12872482,)
+[INFO]: j_LLM_se_r5_m pep dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <trim> op. . .
+[INFO]: The operation took 32.08 s
+[INFO]: j_LLM_se_r5_m dna dataset shape: (12872482,)
+[INFO]: j_LLM_se_r5_m Q dataset shape: (12872482,)
+[INFO]: j_LLM_se_r5_m pep dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <translate_dna> op. . .
+[INFO]: The operation took 403.934 s
+[INFO]: j_LLM_se_r5_m dna dataset shape: (12872482, 148)
+[INFO]: j_LLM_se_r5_m Q dataset shape: (12872482, 148)
+[INFO]: j_LLM_se_r5_m pep dataset shape: (12872482, 51)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <length_summary> op. . .
+[INFO]: The operation took 4.905 s
+[INFO]: j_LLM_se_r5_m dna dataset shape: (12872482, 148)
+[INFO]: j_LLM_se_r5_m Q dataset shape: (12872482, 148)
+[INFO]: j_LLM_se_r5_m pep dataset shape: (12872482, 51)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <length_filter> op. . .
+[INFO]: The operation took 12.298 s
+[INFO]: j_LLM_se_r5_m dna dataset shape: (10591606, 148)
+[INFO]: j_LLM_se_r5_m Q dataset shape: (10591606, 148)
+[INFO]: j_LLM_se_r5_m pep dataset shape: (10591606, 51)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <constant_region_filter> op. . .
+[INFO]: The operation took 14.584 s
+[INFO]: j_LLM_se_r5_m dna dataset shape: (10585980, 148)
+[INFO]: j_LLM_se_r5_m Q dataset shape: (10585980, 148)
+[INFO]: j_LLM_se_r5_m pep dataset shape: (10585980, 51)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <variable_region_filter> op. . .
+[INFO]: The operation took 46.988 s
+[INFO]: j_LLM_se_r5_m dna dataset shape: (10458190, 148)
+[INFO]: j_LLM_se_r5_m Q dataset shape: (10458190, 148)
+[INFO]: j_LLM_se_r5_m pep dataset shape: (10458190, 51)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <q_score_filter> op. . .
+[INFO]: The operation took 14.877 s
+[INFO]: j_LLM_se_r5_m dna dataset shape: (9030589, 148)
+[INFO]: j_LLM_se_r5_m Q dataset shape: (9030589, 148)
+[INFO]: j_LLM_se_r5_m pep dataset shape: (9030589, 51)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <fetch_region> op. . .
+[INFO]: <fetch_region> op will collapse sample j_LLM_se_r5_m's internal state
+[INFO]: The operation took 2.865 s
+[INFO]: j_LLM_se_r5_m dna dataset shape: (9030589, 148)
+[INFO]: j_LLM_se_r5_m Q dataset shape: (9030589, 148)
+[INFO]: j_LLM_se_r5_m pep dataset shape: (9030589, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <filter_ambiguous> op. . .
+[INFO]: The operation took 21.613 s
+[INFO]: j_LLM_se_r5_m dna dataset shape: (9030589, 148)
+[INFO]: j_LLM_se_r5_m Q dataset shape: (9030589, 148)
+[INFO]: j_LLM_se_r5_m pep dataset shape: (9030589, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <sequence_level_convergence_summary> op. . .
+[INFO]: The operation took 38.938 s
+[INFO]: j_LLM_se_r5_m dna dataset shape: (9030589, 148)
+[INFO]: j_LLM_se_r5_m Q dataset shape: (9030589, 148)
+[INFO]: j_LLM_se_r5_m pep dataset shape: (9030589, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <library_design_summary> op. . .
+[INFO]: The operation took 0.108 s
+[INFO]: j_LLM_se_r5_m dna dataset shape: (9030589, 148)
+[INFO]: j_LLM_se_r5_m Q dataset shape: (9030589, 148)
+[INFO]: j_LLM_se_r5_m pep dataset shape: (9030589, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <unpad_data> op. . .
+[INFO]: The operation took 35.178 s
+[INFO]: j_LLM_se_r5_m dna dataset shape: (9030589, 148)
+[INFO]: j_LLM_se_r5_m Q dataset shape: (9030589, 148)
+[INFO]: j_LLM_se_r5_m pep dataset shape: (9030589, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <save_data> op. . .
+[INFO]: The operation took 3.955 s
+[INFO]: j_LLM_se_r5_m dna dataset shape: (9030589, 148)
+[INFO]: j_LLM_se_r5_m Q dataset shape: (9030589, 148)
+[INFO]: j_LLM_se_r5_m pep dataset shape: (9030589, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Classifier succesfully initialized <4-track_data_analysis_demo> model.
+[INFO]: <Pipeline object; current queue size: 0 op(s)> was succesfully initialized
+[INFO]: <FastqParser object> was succesfully initialized
+[INFO]: <DataAnalysisTools object> was succesfully initialized
+[INFO]: <DataPreprocessor object> was succesfully initialized
+[INFO]: <Classifier object> was succesfully initialized
+[WARNING]: DataPreprocessor did not receive an F matrix for featurization. Featurization will result in one-hot encoding. . .
+[INFO]: 8 ops appended to pipeline; current queue size: 8
+[INFO]: j_LLM_sele_r5 X dataset shape: (9030589, 17)
+[INFO]: j_LLM_sele_r5 y dataset shape: (9030589,)
+[INFO]: j_LLM_anti_r5 X dataset shape: (7986276, 17)
+[INFO]: j_LLM_anti_r5 y dataset shape: (7986276,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <X_as_int> op. . .
+[INFO]: The operation took 9.268 s
+[INFO]: j_LLM_sele_r5 X dataset shape: (9030589, 17)
+[INFO]: j_LLM_sele_r5 y dataset shape: (9030589,)
+[INFO]: j_LLM_anti_r5 X dataset shape: (7986276, 17)
+[INFO]: j_LLM_anti_r5 y dataset shape: (7986276,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <pop_intraset_duplicates> op. . .
+[INFO]: The operation took 28.115 s
+[INFO]: j_LLM_sele_r5 X dataset shape: (7122524, 17)
+[INFO]: j_LLM_sele_r5 y dataset shape: (7122524,)
+[INFO]: j_LLM_anti_r5 X dataset shape: (6938619, 17)
+[INFO]: j_LLM_anti_r5 y dataset shape: (6938619,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <pop_interset_duplicates> op. . .
+[INFO]: The operation took 3.98 s
+[INFO]: j_LLM_sele_r5 X dataset shape: (7110619, 17)
+[INFO]: j_LLM_sele_r5 y dataset shape: (7110619,)
+[INFO]: j_LLM_anti_r5 X dataset shape: (6926715, 17)
+[INFO]: j_LLM_anti_r5 y dataset shape: (6926715,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <merge_datasets> op. . .
+[INFO]: The operation took 0.058 s
+[INFO]: merged_dataset X dataset shape: (14037334, 17)
+[INFO]: merged_dataset y dataset shape: (14037334,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <shuffle_intraset> op. . .
+[INFO]: The operation took 1.398 s
+[INFO]: merged_dataset X dataset shape: (14037334, 17)
+[INFO]: merged_dataset y dataset shape: (14037334,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <x_expand_and_pad> op. . .
+[INFO]: The operation took 3.176 s
+[INFO]: merged_dataset X dataset shape: (14037334, 18)
+[INFO]: merged_dataset y dataset shape: (14037334,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <test_train_split> op. . .
+[INFO]: The operation took 0.732 s
+[INFO]: train_data X dataset shape: (13756588, 18)
+[INFO]: train_data y dataset shape: (13756588,)
+[INFO]: test_data X dataset shape: (280746, 18)
+[INFO]: test_data y dataset shape: (280746,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <featurize_to_h5> op. . .
+[INFO]: The operation took 1743.205 s
+[INFO]: 1 ops appended to pipeline; current queue size: 1
+[INFO]: Queuing <train_model> op. . .
+[INFO]: Succesfully loaded hdf5 train and test datasets!
+[INFO]: 1 ops appended to pipeline; current queue size: 1
+[INFO]: Queuing <train_model> op. . .
+[INFO]: Succesfully loaded hdf5 train and test datasets!
+[INFO]: 6 ops appended to pipeline; current queue size: 6
+[INFO]: MaeJ_sele_r5 X dataset shape: (284580, 17)
+[INFO]: MaeJ_sele_r5 y dataset shape: None
+[INFO]: MaeJ_sele_r5 seq dataset shape: (284580, 17)
+[INFO]: MaeJ_anti_r5 X dataset shape: (587758, 17)
+[INFO]: MaeJ_anti_r5 y dataset shape: None
+[INFO]: MaeJ_anti_r5 seq dataset shape: (587758, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <X_as_int> op. . .
+[INFO]: The operation took 0.467 s
+[INFO]: MaeJ_sele_r5 X dataset shape: (284580, 17)
+[INFO]: MaeJ_sele_r5 y dataset shape: None
+[INFO]: MaeJ_sele_r5 seq dataset shape: (284580, 17)
+[INFO]: MaeJ_anti_r5 X dataset shape: (587758, 17)
+[INFO]: MaeJ_anti_r5 y dataset shape: None
+[INFO]: MaeJ_anti_r5 seq dataset shape: (587758, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <pop_intraset_duplicates> op. . .
+[INFO]: The operation took 1.06 s
+[INFO]: MaeJ_sele_r5 X dataset shape: (282179, 17)
+[INFO]: MaeJ_sele_r5 y dataset shape: None
+[INFO]: MaeJ_sele_r5 seq dataset shape: (282179, 17)
+[INFO]: MaeJ_anti_r5 X dataset shape: (582867, 17)
+[INFO]: MaeJ_anti_r5 y dataset shape: None
+[INFO]: MaeJ_anti_r5 seq dataset shape: (582867, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <pop_interset_duplicates> op. . .
+[INFO]: The operation took 0.204 s
+[INFO]: MaeJ_sele_r5 X dataset shape: (282131, 17)
+[INFO]: MaeJ_sele_r5 y dataset shape: None
+[INFO]: MaeJ_sele_r5 seq dataset shape: (282131, 17)
+[INFO]: MaeJ_anti_r5 X dataset shape: (582819, 17)
+[INFO]: MaeJ_anti_r5 y dataset shape: None
+[INFO]: MaeJ_anti_r5 seq dataset shape: (582819, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <x_expand_and_pad> op. . .
+[INFO]: The operation took 0.195 s
+[INFO]: MaeJ_sele_r5 X dataset shape: (282131, 18)
+[INFO]: MaeJ_sele_r5 y dataset shape: None
+[INFO]: MaeJ_sele_r5 seq dataset shape: (282131, 17)
+[INFO]: MaeJ_anti_r5 X dataset shape: (582819, 18)
+[INFO]: MaeJ_anti_r5 y dataset shape: None
+[INFO]: MaeJ_anti_r5 seq dataset shape: (582819, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <featurize_X_datasets> op. . .
+[INFO]: The operation took 9.912 s
+[INFO]: MaeJ_sele_r5 X dataset shape: (282131, 18, 204)
+[INFO]: MaeJ_sele_r5 y dataset shape: None
+[INFO]: MaeJ_sele_r5 seq dataset shape: (282131, 17)
+[INFO]: MaeJ_anti_r5 X dataset shape: (582819, 18, 204)
+[INFO]: MaeJ_anti_r5 y dataset shape: None
+[INFO]: MaeJ_anti_r5 seq dataset shape: (582819, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <predict_fitness> op. . .
+[INFO]: The operation took 123.555 s
+[INFO]: MaeJ_sele_r5 X dataset shape: (282131, 18, 204)
+[INFO]: MaeJ_sele_r5 y dataset shape: None
+[INFO]: MaeJ_sele_r5 seq dataset shape: (282131, 17)
+[INFO]: MaeJ_sele_r5 proba dataset shape: (282131,)
+[INFO]: MaeJ_anti_r5 X dataset shape: (582819, 18, 204)
+[INFO]: MaeJ_anti_r5 y dataset shape: None
+[INFO]: MaeJ_anti_r5 seq dataset shape: (582819, 17)
+[INFO]: MaeJ_anti_r5 proba dataset shape: (582819,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Classifier succesfully initialized <4-track_data_analysis_demo> model.
+[INFO]: <Classifier object> was succesfully initialized
+[INFO]: 8 ops appended to pipeline; current queue size: 8
+[INFO]: MaeJ_positive_filtered_r5 X dataset shape: (123627, 17)
+[INFO]: MaeJ_positive_filtered_r5 y dataset shape: (123627,)
+[INFO]: MaeJ_positive_filtered_r5 seq dataset shape: (123627, 17)
+[INFO]: MaeJ_negative_filtered_r5 X dataset shape: (582102, 17)
+[INFO]: MaeJ_negative_filtered_r5 y dataset shape: (582102,)
+[INFO]: MaeJ_negative_filtered_r5 seq dataset shape: (582102, 17)
+[INFO]: MaeJ_augmented_r5 X dataset shape: (16429, 17)
+[INFO]: MaeJ_augmented_r5 y dataset shape: (16429,)
+[INFO]: MaeJ_augmented_r5 seq dataset shape: (16429, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <X_as_int> op. . .
+[INFO]: The operation took 0.331 s
+[INFO]: MaeJ_positive_filtered_r5 X dataset shape: (123627, 17)
+[INFO]: MaeJ_positive_filtered_r5 y dataset shape: (123627,)
+[INFO]: MaeJ_positive_filtered_r5 seq dataset shape: (123627, 17)
+[INFO]: MaeJ_negative_filtered_r5 X dataset shape: (582102, 17)
+[INFO]: MaeJ_negative_filtered_r5 y dataset shape: (582102,)
+[INFO]: MaeJ_negative_filtered_r5 seq dataset shape: (582102, 17)
+[INFO]: MaeJ_augmented_r5 X dataset shape: (16429, 17)
+[INFO]: MaeJ_augmented_r5 y dataset shape: (16429,)
+[INFO]: MaeJ_augmented_r5 seq dataset shape: (16429, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <pop_validation_peptides> op. . .
+[INFO]: The operation took 1.209 s
+[INFO]: MaeJ_positive_filtered_r5 X dataset shape: (123627, 17)
+[INFO]: MaeJ_positive_filtered_r5 y dataset shape: (123627,)
+[INFO]: MaeJ_positive_filtered_r5 seq dataset shape: (123627, 17)
+[INFO]: MaeJ_negative_filtered_r5 X dataset shape: (582101, 17)
+[INFO]: MaeJ_negative_filtered_r5 y dataset shape: (582101,)
+[INFO]: MaeJ_negative_filtered_r5 seq dataset shape: (582101, 17)
+[INFO]: MaeJ_augmented_r5 X dataset shape: (16429, 17)
+[INFO]: MaeJ_augmented_r5 y dataset shape: (16429,)
+[INFO]: MaeJ_augmented_r5 seq dataset shape: (16429, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <merge_datasets> op. . .
+[INFO]: The operation took 0.004 s
+[INFO]: merged_dataset X dataset shape: (722157, 17)
+[INFO]: merged_dataset y dataset shape: (722157,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <shuffle_intraset> op. . .
+[INFO]: The operation took 0.036 s
+[INFO]: merged_dataset X dataset shape: (722157, 17)
+[INFO]: merged_dataset y dataset shape: (722157,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <x_expand_and_pad> op. . .
+[INFO]: The operation took 0.163 s
+[INFO]: merged_dataset X dataset shape: (722157, 18)
+[INFO]: merged_dataset y dataset shape: (722157,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <test_train_split> op. . .
+[INFO]: The operation took 0.026 s
+[INFO]: train_data X dataset shape: (707714, 18)
+[INFO]: train_data y dataset shape: (707714,)
+[INFO]: test_data X dataset shape: (14443, 18)
+[INFO]: test_data y dataset shape: (14443,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <featurize_X_datasets> op. . .
+[INFO]: The operation took 7.658 s
+[INFO]: train_data X dataset shape: (707714, 18, 204)
+[INFO]: train_data y dataset shape: (707714,)
+[INFO]: test_data X dataset shape: (14443, 18, 204)
+[INFO]: test_data y dataset shape: (14443,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <train_model> op. . .
+[INFO]: Classifier succesfully initialized <4-track_data_analysis_demo> model.
+[INFO]: <Classifier object> was succesfully initialized
+[INFO]: 8 ops appended to pipeline; current queue size: 8
+[INFO]: MaeJ_positive_filtered_r5 X dataset shape: (123627, 17)
+[INFO]: MaeJ_positive_filtered_r5 y dataset shape: (123627,)
+[INFO]: MaeJ_positive_filtered_r5 seq dataset shape: (123627, 17)
+[INFO]: MaeJ_negative_filtered_r5 X dataset shape: (582102, 17)
+[INFO]: MaeJ_negative_filtered_r5 y dataset shape: (582102,)
+[INFO]: MaeJ_negative_filtered_r5 seq dataset shape: (582102, 17)
+[INFO]: MaeJ_augmented_r5 X dataset shape: (16429, 17)
+[INFO]: MaeJ_augmented_r5 y dataset shape: (16429,)
+[INFO]: MaeJ_augmented_r5 seq dataset shape: (16429, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <X_as_int> op. . .
+[INFO]: The operation took 0.33 s
+[INFO]: MaeJ_positive_filtered_r5 X dataset shape: (123627, 17)
+[INFO]: MaeJ_positive_filtered_r5 y dataset shape: (123627,)
+[INFO]: MaeJ_positive_filtered_r5 seq dataset shape: (123627, 17)
+[INFO]: MaeJ_negative_filtered_r5 X dataset shape: (582102, 17)
+[INFO]: MaeJ_negative_filtered_r5 y dataset shape: (582102,)
+[INFO]: MaeJ_negative_filtered_r5 seq dataset shape: (582102, 17)
+[INFO]: MaeJ_augmented_r5 X dataset shape: (16429, 17)
+[INFO]: MaeJ_augmented_r5 y dataset shape: (16429,)
+[INFO]: MaeJ_augmented_r5 seq dataset shape: (16429, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <pop_validation_peptides> op. . .
+[INFO]: The operation took 1.148 s
+[INFO]: MaeJ_positive_filtered_r5 X dataset shape: (123627, 17)
+[INFO]: MaeJ_positive_filtered_r5 y dataset shape: (123627,)
+[INFO]: MaeJ_positive_filtered_r5 seq dataset shape: (123627, 17)
+[INFO]: MaeJ_negative_filtered_r5 X dataset shape: (582101, 17)
+[INFO]: MaeJ_negative_filtered_r5 y dataset shape: (582101,)
+[INFO]: MaeJ_negative_filtered_r5 seq dataset shape: (582101, 17)
+[INFO]: MaeJ_augmented_r5 X dataset shape: (16429, 17)
+[INFO]: MaeJ_augmented_r5 y dataset shape: (16429,)
+[INFO]: MaeJ_augmented_r5 seq dataset shape: (16429, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <merge_datasets> op. . .
+[INFO]: The operation took 0.004 s
+[INFO]: merged_dataset X dataset shape: (722157, 17)
+[INFO]: merged_dataset y dataset shape: (722157,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <shuffle_intraset> op. . .
+[INFO]: The operation took 0.035 s
+[INFO]: merged_dataset X dataset shape: (722157, 17)
+[INFO]: merged_dataset y dataset shape: (722157,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <x_expand_and_pad> op. . .
+[INFO]: The operation took 0.161 s
+[INFO]: merged_dataset X dataset shape: (722157, 18)
+[INFO]: merged_dataset y dataset shape: (722157,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <test_train_split> op. . .
+[INFO]: The operation took 0.027 s
+[INFO]: train_data X dataset shape: (707714, 18)
+[INFO]: train_data y dataset shape: (707714,)
+[INFO]: test_data X dataset shape: (14443, 18)
+[INFO]: test_data y dataset shape: (14443,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <featurize_to_h5> op. . .
+[INFO]: The operation took 70.229 s
+[INFO]: Queuing <train_model> op. . .
+[INFO]: Succesfully loaded hdf5 train and test datasets!
+[INFO]: Classifier succesfully initialized <4-track_data_analysis_demo> model.
+[INFO]: <Classifier object> was succesfully initialized
+[INFO]: 8 ops appended to pipeline; current queue size: 8
+[INFO]: MaeJ_positive_filtered_r5 X dataset shape: (123627, 17)
+[INFO]: MaeJ_positive_filtered_r5 y dataset shape: (123627,)
+[INFO]: MaeJ_positive_filtered_r5 seq dataset shape: (123627, 17)
+[INFO]: MaeJ_negative_filtered_r5 X dataset shape: (582102, 17)
+[INFO]: MaeJ_negative_filtered_r5 y dataset shape: (582102,)
+[INFO]: MaeJ_negative_filtered_r5 seq dataset shape: (582102, 17)
+[INFO]: MaeJ_augmented_r5 X dataset shape: (16429, 17)
+[INFO]: MaeJ_augmented_r5 y dataset shape: (16429,)
+[INFO]: MaeJ_augmented_r5 seq dataset shape: (16429, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <X_as_int> op. . .
+[INFO]: The operation took 0.334 s
+[INFO]: MaeJ_positive_filtered_r5 X dataset shape: (123627, 17)
+[INFO]: MaeJ_positive_filtered_r5 y dataset shape: (123627,)
+[INFO]: MaeJ_positive_filtered_r5 seq dataset shape: (123627, 17)
+[INFO]: MaeJ_negative_filtered_r5 X dataset shape: (582102, 17)
+[INFO]: MaeJ_negative_filtered_r5 y dataset shape: (582102,)
+[INFO]: MaeJ_negative_filtered_r5 seq dataset shape: (582102, 17)
+[INFO]: MaeJ_augmented_r5 X dataset shape: (16429, 17)
+[INFO]: MaeJ_augmented_r5 y dataset shape: (16429,)
+[INFO]: MaeJ_augmented_r5 seq dataset shape: (16429, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <pop_validation_peptides> op. . .
+[INFO]: The operation took 1.164 s
+[INFO]: MaeJ_positive_filtered_r5 X dataset shape: (123627, 17)
+[INFO]: MaeJ_positive_filtered_r5 y dataset shape: (123627,)
+[INFO]: MaeJ_positive_filtered_r5 seq dataset shape: (123627, 17)
+[INFO]: MaeJ_negative_filtered_r5 X dataset shape: (582101, 17)
+[INFO]: MaeJ_negative_filtered_r5 y dataset shape: (582101,)
+[INFO]: MaeJ_negative_filtered_r5 seq dataset shape: (582101, 17)
+[INFO]: MaeJ_augmented_r5 X dataset shape: (16429, 17)
+[INFO]: MaeJ_augmented_r5 y dataset shape: (16429,)
+[INFO]: MaeJ_augmented_r5 seq dataset shape: (16429, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <merge_datasets> op. . .
+[INFO]: The operation took 0.003 s
+[INFO]: merged_dataset X dataset shape: (722157, 17)
+[INFO]: merged_dataset y dataset shape: (722157,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <shuffle_intraset> op. . .
+[INFO]: The operation took 0.035 s
+[INFO]: merged_dataset X dataset shape: (722157, 17)
+[INFO]: merged_dataset y dataset shape: (722157,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <x_expand_and_pad> op. . .
+[INFO]: The operation took 0.16 s
+[INFO]: merged_dataset X dataset shape: (722157, 18)
+[INFO]: merged_dataset y dataset shape: (722157,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <test_train_split> op. . .
+[INFO]: The operation took 0.026 s
+[INFO]: train_data X dataset shape: (707714, 18)
+[INFO]: train_data y dataset shape: (707714,)
+[INFO]: test_data X dataset shape: (14443, 18)
+[INFO]: test_data y dataset shape: (14443,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <featurize_to_h5> op. . .
+[INFO]: The operation took 93.459 s
+[INFO]: Queuing <train_model> op. . .
+[INFO]: Succesfully loaded hdf5 train and test datasets!
+[INFO]: Classifier succesfully initialized <4-track_data_analysis_demo> model.
+[INFO]: <Classifier object> was succesfully initialized
+[INFO]: Succesfully loaded hdf5 train and test datasets!
+[INFO]: Classifier succesfully initialized <4-track_data_analysis_demo> model.
+[INFO]: <Classifier object> was succesfully initialized
+[INFO]: Succesfully loaded hdf5 train and test datasets!
+[INFO]: Classifier succesfully initialized <4-track_data_analysis_demo> model.
+[INFO]: <Pipeline object; current queue size: 0 op(s)> was succesfully initialized
+[INFO]: <FastqParser object> was succesfully initialized
+[INFO]: <DataAnalysisTools object> was succesfully initialized
+[INFO]: <DataPreprocessor object> was succesfully initialized
+[INFO]: <Classifier object> was succesfully initialized
+[INFO]: Classifier succesfully initialized <4-track_data_analysis_demo> model.
+[INFO]: <Classifier object> was succesfully initialized
+[WARNING]: DataPreprocessor did not receive an F matrix for featurization. Featurization will result in one-hot encoding. . .
+[INFO]: 3 ops appended to pipeline; current queue size: 3
+[INFO]: validation_peptides X dataset shape: (24, 17)
+[INFO]: validation_peptides y dataset shape: None
+[INFO]: validation_peptides seq dataset shape: (24, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <x_expand_and_pad> op. . .
+[INFO]: The operation took 0.0 s
+[INFO]: validation_peptides X dataset shape: (24, 18)
+[INFO]: validation_peptides y dataset shape: None
+[INFO]: validation_peptides seq dataset shape: (24, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <featurize_X_datasets> op. . .
+[INFO]: The operation took 0.581 s
+[INFO]: validation_peptides X dataset shape: (24, 18, 204)
+[INFO]: validation_peptides y dataset shape: None
+[INFO]: validation_peptides seq dataset shape: (24, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <predict_fitness> op. . .
+[INFO]: The operation took 6.6 s
+[INFO]: validation_peptides X dataset shape: (24, 18, 204)
+[INFO]: validation_peptides y dataset shape: None
+[INFO]: validation_peptides seq dataset shape: (24, 17)
+[INFO]: validation_peptides proba dataset shape: (24,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: 4 ops appended to pipeline; current queue size: 4
+[INFO]: validation_peptides X dataset shape: (24, 17)
+[INFO]: validation_peptides y dataset shape: None
+[INFO]: validation_peptides seq dataset shape: (24, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <X_as_int> op. . .
+[INFO]: The operation took 0.0 s
+[INFO]: validation_peptides X dataset shape: (24, 17)
+[INFO]: validation_peptides y dataset shape: None
+[INFO]: validation_peptides seq dataset shape: (24, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <x_expand_and_pad> op. . .
+[INFO]: The operation took 0.001 s
+[INFO]: validation_peptides X dataset shape: (24, 18)
+[INFO]: validation_peptides y dataset shape: None
+[INFO]: validation_peptides seq dataset shape: (24, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <featurize_X_datasets> op. . .
+[INFO]: The operation took 0.004 s
+[INFO]: validation_peptides X dataset shape: (24, 18, 204)
+[INFO]: validation_peptides y dataset shape: None
+[INFO]: validation_peptides seq dataset shape: (24, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <predict_fitness> op. . .
+[INFO]: The operation took 0.042 s
+[INFO]: validation_peptides X dataset shape: (24, 18, 204)
+[INFO]: validation_peptides y dataset shape: None
+[INFO]: validation_peptides seq dataset shape: (24, 17)
+[INFO]: validation_peptides proba dataset shape: (24,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: 4 ops appended to pipeline; current queue size: 4
+[INFO]: validation_peptides X dataset shape: (24, 17)
+[INFO]: validation_peptides y dataset shape: None
+[INFO]: validation_peptides seq dataset shape: (24, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <X_as_int> op. . .
+[INFO]: The operation took 0.0 s
+[INFO]: validation_peptides X dataset shape: (24, 17)
+[INFO]: validation_peptides y dataset shape: None
+[INFO]: validation_peptides seq dataset shape: (24, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <x_expand_and_pad> op. . .
+[INFO]: The operation took 0.0 s
+[INFO]: validation_peptides X dataset shape: (24, 18)
+[INFO]: validation_peptides y dataset shape: None
+[INFO]: validation_peptides seq dataset shape: (24, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <featurize_X_datasets> op. . .
+[INFO]: The operation took 0.004 s
+[INFO]: validation_peptides X dataset shape: (24, 18, 204)
+[INFO]: validation_peptides y dataset shape: None
+[INFO]: validation_peptides seq dataset shape: (24, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <predict_fitness> op. . .
+[INFO]: The operation took 0.036 s
+[INFO]: validation_peptides X dataset shape: (24, 18, 204)
+[INFO]: validation_peptides y dataset shape: None
+[INFO]: validation_peptides seq dataset shape: (24, 17)
+[INFO]: validation_peptides proba dataset shape: (24,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: 4 ops appended to pipeline; current queue size: 4
+[INFO]: FRSQVENVdSLNQRDGa X dataset shape: (340, 17)
+[INFO]: FRSQVENVdSLNQRDGa y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <X_as_int> op. . .
+[INFO]: The operation took 0.0 s
+[INFO]: FRSQVENVdSLNQRDGa X dataset shape: (340, 17)
+[INFO]: FRSQVENVdSLNQRDGa y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <x_expand_and_pad> op. . .
+[INFO]: The operation took 0.0 s
+[INFO]: FRSQVENVdSLNQRDGa X dataset shape: (340, 18)
+[INFO]: FRSQVENVdSLNQRDGa y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <featurize_X_datasets> op. . .
+[INFO]: The operation took 0.006 s
+[INFO]: FRSQVENVdSLNQRDGa X dataset shape: (340, 18, 204)
+[INFO]: FRSQVENVdSLNQRDGa y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <predict_fitness> op. . .
+[INFO]: The operation took 0.784 s
+[INFO]: FRSQVENVdSLNQRDGa X dataset shape: (340, 18, 204)
+[INFO]: FRSQVENVdSLNQRDGa y dataset shape: None
+[INFO]: FRSQVENVdSLNQRDGa proba dataset shape: (340,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: 4 ops appended to pipeline; current queue size: 4
+[INFO]: KIEASSPVdFYAIKHPE X dataset shape: (340, 17)
+[INFO]: KIEASSPVdFYAIKHPE y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <X_as_int> op. . .
+[INFO]: The operation took 0.0 s
+[INFO]: KIEASSPVdFYAIKHPE X dataset shape: (340, 17)
+[INFO]: KIEASSPVdFYAIKHPE y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <x_expand_and_pad> op. . .
+[INFO]: The operation took 0.001 s
+[INFO]: KIEASSPVdFYAIKHPE X dataset shape: (340, 18)
+[INFO]: KIEASSPVdFYAIKHPE y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <featurize_X_datasets> op. . .
+[INFO]: The operation took 0.006 s
+[INFO]: KIEASSPVdFYAIKHPE X dataset shape: (340, 18, 204)
+[INFO]: KIEASSPVdFYAIKHPE y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <predict_fitness> op. . .
+[INFO]: The operation took 0.196 s
+[INFO]: KIEASSPVdFYAIKHPE X dataset shape: (340, 18, 204)
+[INFO]: KIEASSPVdFYAIKHPE y dataset shape: None
+[INFO]: KIEASSPVdFYAIKHPE proba dataset shape: (340,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: 4 ops appended to pipeline; current queue size: 4
+[INFO]: VGKWRVDQdKDPGPQNI X dataset shape: (340, 17)
+[INFO]: VGKWRVDQdKDPGPQNI y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <X_as_int> op. . .
+[INFO]: The operation took 0.0 s
+[INFO]: VGKWRVDQdKDPGPQNI X dataset shape: (340, 17)
+[INFO]: VGKWRVDQdKDPGPQNI y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <x_expand_and_pad> op. . .
+[INFO]: The operation took 0.001 s
+[INFO]: VGKWRVDQdKDPGPQNI X dataset shape: (340, 18)
+[INFO]: VGKWRVDQdKDPGPQNI y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <featurize_X_datasets> op. . .
+[INFO]: The operation took 0.006 s
+[INFO]: VGKWRVDQdKDPGPQNI X dataset shape: (340, 18, 204)
+[INFO]: VGKWRVDQdKDPGPQNI y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <predict_fitness> op. . .
+[INFO]: The operation took 0.194 s
+[INFO]: VGKWRVDQdKDPGPQNI X dataset shape: (340, 18, 204)
+[INFO]: VGKWRVDQdKDPGPQNI y dataset shape: None
+[INFO]: VGKWRVDQdKDPGPQNI proba dataset shape: (340,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: 4 ops appended to pipeline; current queue size: 4
+[INFO]: VGKWRVDQdKDPGPQNI X dataset shape: (340, 17)
+[INFO]: VGKWRVDQdKDPGPQNI y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <X_as_int> op. . .
+[INFO]: The operation took 0.001 s
+[INFO]: VGKWRVDQdKDPGPQNI X dataset shape: (340, 17)
+[INFO]: VGKWRVDQdKDPGPQNI y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <x_expand_and_pad> op. . .
+[INFO]: The operation took 0.001 s
+[INFO]: VGKWRVDQdKDPGPQNI X dataset shape: (340, 18)
+[INFO]: VGKWRVDQdKDPGPQNI y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <featurize_X_datasets> op. . .
+[INFO]: The operation took 0.006 s
+[INFO]: VGKWRVDQdKDPGPQNI X dataset shape: (340, 18, 204)
+[INFO]: VGKWRVDQdKDPGPQNI y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <predict_fitness> op. . .
+[INFO]: The operation took 0.204 s
+[INFO]: VGKWRVDQdKDPGPQNI X dataset shape: (340, 18, 204)
+[INFO]: VGKWRVDQdKDPGPQNI y dataset shape: None
+[INFO]: VGKWRVDQdKDPGPQNI proba dataset shape: (340,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: 4 ops appended to pipeline; current queue size: 4
+[INFO]: FRSQVENVdSLNQRDGa X dataset shape: (340, 17)
+[INFO]: FRSQVENVdSLNQRDGa y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <X_as_int> op. . .
+[INFO]: The operation took 0.001 s
+[INFO]: FRSQVENVdSLNQRDGa X dataset shape: (340, 17)
+[INFO]: FRSQVENVdSLNQRDGa y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <x_expand_and_pad> op. . .
+[INFO]: The operation took 0.0 s
+[INFO]: FRSQVENVdSLNQRDGa X dataset shape: (340, 18)
+[INFO]: FRSQVENVdSLNQRDGa y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <featurize_X_datasets> op. . .
+[INFO]: The operation took 0.006 s
+[INFO]: FRSQVENVdSLNQRDGa X dataset shape: (340, 18, 204)
+[INFO]: FRSQVENVdSLNQRDGa y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <predict_fitness> op. . .
+[INFO]: The operation took 0.196 s
+[INFO]: FRSQVENVdSLNQRDGa X dataset shape: (340, 18, 204)
+[INFO]: FRSQVENVdSLNQRDGa y dataset shape: None
+[INFO]: FRSQVENVdSLNQRDGa proba dataset shape: (340,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: 4 ops appended to pipeline; current queue size: 4
+[INFO]: FRSQVENVdSLNQRDGa X dataset shape: (340, 17)
+[INFO]: FRSQVENVdSLNQRDGa y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <X_as_int> op. . .
+[INFO]: The operation took 0.001 s
+[INFO]: FRSQVENVdSLNQRDGa X dataset shape: (340, 17)
+[INFO]: FRSQVENVdSLNQRDGa y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <x_expand_and_pad> op. . .
+[INFO]: The operation took 0.001 s
+[INFO]: FRSQVENVdSLNQRDGa X dataset shape: (340, 18)
+[INFO]: FRSQVENVdSLNQRDGa y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <featurize_X_datasets> op. . .
+[INFO]: The operation took 0.006 s
+[INFO]: FRSQVENVdSLNQRDGa X dataset shape: (340, 18, 204)
+[INFO]: FRSQVENVdSLNQRDGa y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <predict_fitness> op. . .
+[INFO]: The operation took 0.141 s
+[INFO]: FRSQVENVdSLNQRDGa X dataset shape: (340, 18, 204)
+[INFO]: FRSQVENVdSLNQRDGa y dataset shape: None
+[INFO]: FRSQVENVdSLNQRDGa proba dataset shape: (340,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Classifier succesfully initialized <4-track_data_analysis_demo> model.
+[INFO]: <Pipeline object; current queue size: 0 op(s)> was succesfully initialized
+[INFO]: <FastqParser object> was succesfully initialized
+[INFO]: <DataAnalysisTools object> was succesfully initialized
+[INFO]: <DataPreprocessor object> was succesfully initialized
+[INFO]: <Classifier object> was succesfully initialized
+[WARNING]: DataPreprocessor did not receive an F matrix for featurization. Featurization will result in one-hot encoding. . .
+[INFO]: 8 ops appended to pipeline; current queue size: 8
+[INFO]: j_LLM_sele_r5 X dataset shape: (9030589, 17)
+[INFO]: j_LLM_sele_r5 y dataset shape: (9030589,)
+[INFO]: j_LLM_anti_r5 X dataset shape: (7986276, 17)
+[INFO]: j_LLM_anti_r5 y dataset shape: (7986276,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <X_as_int> op. . .
+[INFO]: The operation took 9.168 s
+[INFO]: j_LLM_sele_r5 X dataset shape: (9030589, 17)
+[INFO]: j_LLM_sele_r5 y dataset shape: (9030589,)
+[INFO]: j_LLM_anti_r5 X dataset shape: (7986276, 17)
+[INFO]: j_LLM_anti_r5 y dataset shape: (7986276,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <pop_intraset_duplicates> op. . .
+[INFO]: The operation took 27.991 s
+[INFO]: j_LLM_sele_r5 X dataset shape: (7122524, 17)
+[INFO]: j_LLM_sele_r5 y dataset shape: (7122524,)
+[INFO]: j_LLM_anti_r5 X dataset shape: (6938619, 17)
+[INFO]: j_LLM_anti_r5 y dataset shape: (6938619,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <pop_interset_duplicates> op. . .
+[INFO]: The operation took 3.878 s
+[INFO]: j_LLM_sele_r5 X dataset shape: (7110619, 17)
+[INFO]: j_LLM_sele_r5 y dataset shape: (7110619,)
+[INFO]: j_LLM_anti_r5 X dataset shape: (6926715, 17)
+[INFO]: j_LLM_anti_r5 y dataset shape: (6926715,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <merge_datasets> op. . .
+[INFO]: The operation took 0.055 s
+[INFO]: merged_dataset X dataset shape: (14037334, 17)
+[INFO]: merged_dataset y dataset shape: (14037334,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <shuffle_intraset> op. . .
+[INFO]: The operation took 1.401 s
+[INFO]: merged_dataset X dataset shape: (14037334, 17)
+[INFO]: merged_dataset y dataset shape: (14037334,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <x_expand_and_pad> op. . .
+[INFO]: The operation took 3.173 s
+[INFO]: merged_dataset X dataset shape: (14037334, 18)
+[INFO]: merged_dataset y dataset shape: (14037334,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <test_train_split> op. . .
+[INFO]: The operation took 0.734 s
+[INFO]: train_data X dataset shape: (13756588, 18)
+[INFO]: train_data y dataset shape: (13756588,)
+[INFO]: test_data X dataset shape: (280746, 18)
+[INFO]: test_data y dataset shape: (280746,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <featurize_to_h5> op. . .
+[INFO]: The operation took 1467.775 s
+[INFO]: 1 ops appended to pipeline; current queue size: 1
+[INFO]: Queuing <train_model> op. . .
+[INFO]: Succesfully loaded hdf5 train and test datasets!
+[INFO]: The operation took 1501.769 s
+[INFO]: 6 ops appended to pipeline; current queue size: 6
+[INFO]: MaeJ_sele_r5 X dataset shape: (284580, 17)
+[INFO]: MaeJ_sele_r5 y dataset shape: None
+[INFO]: MaeJ_sele_r5 seq dataset shape: (284580, 17)
+[INFO]: MaeJ_anti_r5 X dataset shape: (587758, 17)
+[INFO]: MaeJ_anti_r5 y dataset shape: None
+[INFO]: MaeJ_anti_r5 seq dataset shape: (587758, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <X_as_int> op. . .
+[INFO]: The operation took 0.474 s
+[INFO]: MaeJ_sele_r5 X dataset shape: (284580, 17)
+[INFO]: MaeJ_sele_r5 y dataset shape: None
+[INFO]: MaeJ_sele_r5 seq dataset shape: (284580, 17)
+[INFO]: MaeJ_anti_r5 X dataset shape: (587758, 17)
+[INFO]: MaeJ_anti_r5 y dataset shape: None
+[INFO]: MaeJ_anti_r5 seq dataset shape: (587758, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <pop_intraset_duplicates> op. . .
+[INFO]: The operation took 1.063 s
+[INFO]: MaeJ_sele_r5 X dataset shape: (282179, 17)
+[INFO]: MaeJ_sele_r5 y dataset shape: None
+[INFO]: MaeJ_sele_r5 seq dataset shape: (282179, 17)
+[INFO]: MaeJ_anti_r5 X dataset shape: (582867, 17)
+[INFO]: MaeJ_anti_r5 y dataset shape: None
+[INFO]: MaeJ_anti_r5 seq dataset shape: (582867, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <pop_interset_duplicates> op. . .
+[INFO]: The operation took 0.224 s
+[INFO]: MaeJ_sele_r5 X dataset shape: (282131, 17)
+[INFO]: MaeJ_sele_r5 y dataset shape: None
+[INFO]: MaeJ_sele_r5 seq dataset shape: (282131, 17)
+[INFO]: MaeJ_anti_r5 X dataset shape: (582819, 17)
+[INFO]: MaeJ_anti_r5 y dataset shape: None
+[INFO]: MaeJ_anti_r5 seq dataset shape: (582819, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <x_expand_and_pad> op. . .
+[INFO]: The operation took 0.204 s
+[INFO]: MaeJ_sele_r5 X dataset shape: (282131, 18)
+[INFO]: MaeJ_sele_r5 y dataset shape: None
+[INFO]: MaeJ_sele_r5 seq dataset shape: (282131, 17)
+[INFO]: MaeJ_anti_r5 X dataset shape: (582819, 18)
+[INFO]: MaeJ_anti_r5 y dataset shape: None
+[INFO]: MaeJ_anti_r5 seq dataset shape: (582819, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <featurize_X_datasets> op. . .
+[INFO]: The operation took 9.871 s
+[INFO]: MaeJ_sele_r5 X dataset shape: (282131, 18, 204)
+[INFO]: MaeJ_sele_r5 y dataset shape: None
+[INFO]: MaeJ_sele_r5 seq dataset shape: (282131, 17)
+[INFO]: MaeJ_anti_r5 X dataset shape: (582819, 18, 204)
+[INFO]: MaeJ_anti_r5 y dataset shape: None
+[INFO]: MaeJ_anti_r5 seq dataset shape: (582819, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <predict_fitness> op. . .
+[INFO]: The operation took 120.739 s
+[INFO]: MaeJ_sele_r5 X dataset shape: (282131, 18, 204)
+[INFO]: MaeJ_sele_r5 y dataset shape: None
+[INFO]: MaeJ_sele_r5 seq dataset shape: (282131, 17)
+[INFO]: MaeJ_sele_r5 proba dataset shape: (282131,)
+[INFO]: MaeJ_anti_r5 X dataset shape: (582819, 18, 204)
+[INFO]: MaeJ_anti_r5 y dataset shape: None
+[INFO]: MaeJ_anti_r5 seq dataset shape: (582819, 17)
+[INFO]: MaeJ_anti_r5 proba dataset shape: (582819,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Classifier succesfully initialized <4-track_data_analysis_demo> model.
+[INFO]: <Classifier object> was succesfully initialized
+[INFO]: 4 ops appended to pipeline; current queue size: 4
+[INFO]: validation_peptides X dataset shape: (24, 17)
+[INFO]: validation_peptides y dataset shape: None
+[INFO]: validation_peptides seq dataset shape: (24, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <X_as_int> op. . .
+[INFO]: The operation took 0.0 s
+[INFO]: validation_peptides X dataset shape: (24, 17)
+[INFO]: validation_peptides y dataset shape: None
+[INFO]: validation_peptides seq dataset shape: (24, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <x_expand_and_pad> op. . .
+[INFO]: The operation took 0.001 s
+[INFO]: validation_peptides X dataset shape: (24, 18)
+[INFO]: validation_peptides y dataset shape: None
+[INFO]: validation_peptides seq dataset shape: (24, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <featurize_X_datasets> op. . .
+[INFO]: The operation took 0.006 s
+[INFO]: validation_peptides X dataset shape: (24, 18, 204)
+[INFO]: validation_peptides y dataset shape: None
+[INFO]: validation_peptides seq dataset shape: (24, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <predict_fitness> op. . .
+[INFO]: The operation took 0.589 s
+[INFO]: validation_peptides X dataset shape: (24, 18, 204)
+[INFO]: validation_peptides y dataset shape: None
+[INFO]: validation_peptides seq dataset shape: (24, 17)
+[INFO]: validation_peptides proba dataset shape: (24,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: 4 ops appended to pipeline; current queue size: 4
+[INFO]: FRSQVENVdSLNQRDGa X dataset shape: (340, 17)
+[INFO]: FRSQVENVdSLNQRDGa y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <X_as_int> op. . .
+[INFO]: The operation took 0.001 s
+[INFO]: FRSQVENVdSLNQRDGa X dataset shape: (340, 17)
+[INFO]: FRSQVENVdSLNQRDGa y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <x_expand_and_pad> op. . .
+[INFO]: The operation took 0.001 s
+[INFO]: FRSQVENVdSLNQRDGa X dataset shape: (340, 18)
+[INFO]: FRSQVENVdSLNQRDGa y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <featurize_X_datasets> op. . .
+[INFO]: The operation took 0.006 s
+[INFO]: FRSQVENVdSLNQRDGa X dataset shape: (340, 18, 204)
+[INFO]: FRSQVENVdSLNQRDGa y dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <predict_fitness> op. . .
+[INFO]: The operation took 0.303 s
+[INFO]: FRSQVENVdSLNQRDGa X dataset shape: (340, 18, 204)
+[INFO]: FRSQVENVdSLNQRDGa y dataset shape: None
+[INFO]: FRSQVENVdSLNQRDGa proba dataset shape: (340,)
+[INFO]: -----------------------------------------------------------------
