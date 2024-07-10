@@ -2,12 +2,12 @@
  
 ## About
 
-This repository holds the code and a demo to reproduce the results of the LanJ<sub>C</sub> mRNA display profiling study (reference tbd). This a fork of the previously published [LazBF and LazDEF](https://github.com/avngrdv/mRNA-display-deep-learning) repository. The repository holds python scripts to reproduce the entire workflow from from loading NGS output files to training and evaluating tensorflow-based models.
+This repository holds the code and a demo to reproduce the results of the LanJ<sub>C</sub> mRNA display profiling study (reference tbd). This a fork of the previously published [LazBF and LazDEF](https://github.com/avngrdv/mRNA-display-deep-learning) repository. The repository holds python scripts to reproduce the entire pipeline: from loading NGS output files to training and evaluating tensorflow-based models.
 
 1. All metaparameters which include DNA and peptide library designs, a genetic code table, model hyperparameters, etc are specified in ```./srs/config.py```
 2. Primary code is in ```./srs/clibas```
 3. Model architecture is defined in ```./srs/tf/cnn_model.py``` (```cnn_vm_J2``` was used to build both the denoiser and LanJ<sub>C</sub> models).
-5. Fully trained model weights are in ```./tf_trained_models```
+5. Fully trained model weights stored as .h5 files are in ```./tf_trained_models```
 6. The associated NGS sequencing data is uploaded to DDBJ (accession number: tbd; to be released on publication)
 \
 \
