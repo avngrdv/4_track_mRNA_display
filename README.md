@@ -8,12 +8,11 @@ This repository holds the code and a demo to reproduce the results of the LanJ<s
 2. Primary code is in ```./srs/clibas```
 3. Model architecture is defined in ```./srs/tf/cnn_model.py``` (```cnn_vm_J2``` was used to build both the denoiser and LanJ<sub>C</sub> models).
 5. Fully trained model weights stored as .h5 files are in ```./tf_trained_models```
-6. The associated NGS sequencing data is uploaded to DDBJ (accession number: tbd; to be released on publication)
+6. The associated NGS sequencing data is uploaded to DDBJ (accession number: [DRA018924](https://ddbj.nig.ac.jp/search/entry/sra-submission/DRA018924))
 \
 \
 \
-For further details, refer to the manuscript: (reference tbd).
-Please cite (tbd) if you use this code.
+For further details, refer to the accompanying paper: [_J. Am. Chem. Soc._ **2024**, 146, 31124−31136](https://pubs.acs.org/doi/full/10.1021/jacs.4c11013). Please cite it if you use this code.
 
 ## Dependencies
 
